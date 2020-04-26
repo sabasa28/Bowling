@@ -120,6 +120,30 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &15052199 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4260342094908782849, guid: 4246925f0393c430189bb4ceba36dc8a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1058982574}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7dd2062413586f439f6f6abdfe2231c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &125021962 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4260342094908782849, guid: 4246925f0393c430189bb4ceba36dc8a,
+    type: 3}
+  m_PrefabInstance: {fileID: 767150594}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7dd2062413586f439f6f6abdfe2231c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &266680149
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -129,7 +153,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 139516, guid: 4246925f0393c430189bb4ceba36dc8a, type: 3}
       propertyPath: m_Name
-      value: Kegel (6)
+      value: Pine
+      objectReference: {fileID: 0}
+    - target: {fileID: 139516, guid: 4246925f0393c430189bb4ceba36dc8a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 424252, guid: 4246925f0393c430189bb4ceba36dc8a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -175,6 +203,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4260342094908782849, guid: 4246925f0393c430189bb4ceba36dc8a,
+        type: 3}
+      propertyPath: floor
+      value: 
+      objectReference: {fileID: 1067395773}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4246925f0393c430189bb4ceba36dc8a, type: 3}
 --- !u!1001 &521188865
@@ -186,7 +219,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 139516, guid: 4246925f0393c430189bb4ceba36dc8a, type: 3}
       propertyPath: m_Name
-      value: Kegel (8)
+      value: Pine
+      objectReference: {fileID: 0}
+    - target: {fileID: 139516, guid: 4246925f0393c430189bb4ceba36dc8a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 424252, guid: 4246925f0393c430189bb4ceba36dc8a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -232,8 +269,37 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4260342094908782849, guid: 4246925f0393c430189bb4ceba36dc8a,
+        type: 3}
+      propertyPath: floor
+      value: 
+      objectReference: {fileID: 1067395773}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4246925f0393c430189bb4ceba36dc8a, type: 3}
+--- !u!114 &574428563 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4260342094908782849, guid: 4246925f0393c430189bb4ceba36dc8a,
+    type: 3}
+  m_PrefabInstance: {fileID: 521188865}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7dd2062413586f439f6f6abdfe2231c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &648199815 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4260342094908782849, guid: 4246925f0393c430189bb4ceba36dc8a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1866714299}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7dd2062413586f439f6f6abdfe2231c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &702871421
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -291,7 +357,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 451620, guid: ac1af96fd5e0f4f9e97339b652aa389b, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1
+      value: 1.0000005
       objectReference: {fileID: 0}
     - target: {fileID: 451620, guid: ac1af96fd5e0f4f9e97339b652aa389b, type: 3}
       propertyPath: m_LocalScale.y
@@ -299,7 +365,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 451620, guid: ac1af96fd5e0f4f9e97339b652aa389b, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1
+      value: 1.0000005
       objectReference: {fileID: 0}
     - target: {fileID: 470776, guid: ac1af96fd5e0f4f9e97339b652aa389b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -398,6 +464,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!114 &753034589 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4260342094908782849, guid: 4246925f0393c430189bb4ceba36dc8a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1201778688}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7dd2062413586f439f6f6abdfe2231c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &767150594
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -407,7 +485,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 139516, guid: 4246925f0393c430189bb4ceba36dc8a, type: 3}
       propertyPath: m_Name
-      value: Kegel
+      value: Pine
       objectReference: {fileID: 0}
     - target: {fileID: 424252, guid: 4246925f0393c430189bb4ceba36dc8a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -453,6 +531,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4260342094908782849, guid: 4246925f0393c430189bb4ceba36dc8a,
+        type: 3}
+      propertyPath: floor
+      value: 
+      objectReference: {fileID: 1067395773}
+    - target: {fileID: 4260342094908782849, guid: 4246925f0393c430189bb4ceba36dc8a,
+        type: 3}
+      propertyPath: childTrans
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4246925f0393c430189bb4ceba36dc8a, type: 3}
 --- !u!1 &772708765
@@ -497,6 +585,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 90a47e6eb4446324cbee80bea8a61122, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &901089780 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4260342094908782849, guid: 4246925f0393c430189bb4ceba36dc8a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1361826107}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7dd2062413586f439f6f6abdfe2231c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &963194225
@@ -582,6 +682,61 @@ Transform:
   m_Father: {fileID: 772708766}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 25, y: 90, z: 0}
+--- !u!1 &1020543184
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1020543186}
+  - component: {fileID: 1020543185}
+  m_Layer: 0
+  m_Name: Game
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1020543185
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1020543184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 752b9df7a5ef13047b478bbb01db496d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pines:
+  - {fileID: 1134600325}
+  - {fileID: 574428563}
+  - {fileID: 753034589}
+  - {fileID: 1705673292}
+  - {fileID: 15052199}
+  - {fileID: 1510613681}
+  - {fileID: 648199815}
+  - {fileID: 1615143227}
+  - {fileID: 901089780}
+  - {fileID: 125021962}
+  ball: {fileID: 1823392011}
+--- !u!4 &1020543186
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1020543184}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -10, y: 18.3, z: 2.6342402}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1058982574
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -591,7 +746,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 139516, guid: 4246925f0393c430189bb4ceba36dc8a, type: 3}
       propertyPath: m_Name
-      value: Kegel (5)
+      value: Pine
+      objectReference: {fileID: 0}
+    - target: {fileID: 139516, guid: 4246925f0393c430189bb4ceba36dc8a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 424252, guid: 4246925f0393c430189bb4ceba36dc8a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -637,6 +796,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4260342094908782849, guid: 4246925f0393c430189bb4ceba36dc8a,
+        type: 3}
+      propertyPath: floor
+      value: 
+      objectReference: {fileID: 1067395773}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4246925f0393c430189bb4ceba36dc8a, type: 3}
 --- !u!1 &1067395773
@@ -740,7 +904,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 139516, guid: 4246925f0393c430189bb4ceba36dc8a, type: 3}
       propertyPath: m_Name
-      value: Kegel (9)
+      value: Pine
+      objectReference: {fileID: 0}
+    - target: {fileID: 139516, guid: 4246925f0393c430189bb4ceba36dc8a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 424252, guid: 4246925f0393c430189bb4ceba36dc8a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -786,8 +954,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4260342094908782849, guid: 4246925f0393c430189bb4ceba36dc8a,
+        type: 3}
+      propertyPath: floor
+      value: 
+      objectReference: {fileID: 1067395773}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4246925f0393c430189bb4ceba36dc8a, type: 3}
+--- !u!114 &1134600325 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4260342094908782849, guid: 4246925f0393c430189bb4ceba36dc8a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1103806503}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7dd2062413586f439f6f6abdfe2231c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1201778688
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -797,7 +982,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 139516, guid: 4246925f0393c430189bb4ceba36dc8a, type: 3}
       propertyPath: m_Name
-      value: Kegel (7)
+      value: Pine
+      objectReference: {fileID: 0}
+    - target: {fileID: 139516, guid: 4246925f0393c430189bb4ceba36dc8a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 424252, guid: 4246925f0393c430189bb4ceba36dc8a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -843,6 +1032,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4260342094908782849, guid: 4246925f0393c430189bb4ceba36dc8a,
+        type: 3}
+      propertyPath: floor
+      value: 
+      objectReference: {fileID: 1067395773}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4246925f0393c430189bb4ceba36dc8a, type: 3}
 --- !u!1001 &1361826107
@@ -854,7 +1048,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 139516, guid: 4246925f0393c430189bb4ceba36dc8a, type: 3}
       propertyPath: m_Name
-      value: Kegel (1)
+      value: Pine
+      objectReference: {fileID: 0}
+    - target: {fileID: 139516, guid: 4246925f0393c430189bb4ceba36dc8a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 424252, guid: 4246925f0393c430189bb4ceba36dc8a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -900,8 +1098,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4260342094908782849, guid: 4246925f0393c430189bb4ceba36dc8a,
+        type: 3}
+      propertyPath: floor
+      value: 
+      objectReference: {fileID: 1067395773}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4246925f0393c430189bb4ceba36dc8a, type: 3}
+--- !u!114 &1510613681 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4260342094908782849, guid: 4246925f0393c430189bb4ceba36dc8a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1575519018}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7dd2062413586f439f6f6abdfe2231c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1575519018
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -911,7 +1126,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 139516, guid: 4246925f0393c430189bb4ceba36dc8a, type: 3}
       propertyPath: m_Name
-      value: Kegel (4)
+      value: Pine
+      objectReference: {fileID: 0}
+    - target: {fileID: 139516, guid: 4246925f0393c430189bb4ceba36dc8a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 424252, guid: 4246925f0393c430189bb4ceba36dc8a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -957,8 +1176,37 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4260342094908782849, guid: 4246925f0393c430189bb4ceba36dc8a,
+        type: 3}
+      propertyPath: floor
+      value: 
+      objectReference: {fileID: 1067395773}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4246925f0393c430189bb4ceba36dc8a, type: 3}
+--- !u!114 &1615143227 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4260342094908782849, guid: 4246925f0393c430189bb4ceba36dc8a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1857010960}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7dd2062413586f439f6f6abdfe2231c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1705673292 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4260342094908782849, guid: 4246925f0393c430189bb4ceba36dc8a,
+    type: 3}
+  m_PrefabInstance: {fileID: 266680149}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7dd2062413586f439f6f6abdfe2231c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1823392008 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 184454, guid: ac1af96fd5e0f4f9e97339b652aa389b,
@@ -998,6 +1246,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   force: 0
   movement: 20
+  reset: 0
 --- !u!54 &1823392012
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1023,7 +1272,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 139516, guid: 4246925f0393c430189bb4ceba36dc8a, type: 3}
       propertyPath: m_Name
-      value: Kegel (2)
+      value: Pine
+      objectReference: {fileID: 0}
+    - target: {fileID: 139516, guid: 4246925f0393c430189bb4ceba36dc8a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 424252, guid: 4246925f0393c430189bb4ceba36dc8a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1069,6 +1322,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4260342094908782849, guid: 4246925f0393c430189bb4ceba36dc8a,
+        type: 3}
+      propertyPath: floor
+      value: 
+      objectReference: {fileID: 1067395773}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4246925f0393c430189bb4ceba36dc8a, type: 3}
 --- !u!1001 &1866714299
@@ -1080,7 +1338,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 139516, guid: 4246925f0393c430189bb4ceba36dc8a, type: 3}
       propertyPath: m_Name
-      value: Kegel (3)
+      value: Pine
+      objectReference: {fileID: 0}
+    - target: {fileID: 139516, guid: 4246925f0393c430189bb4ceba36dc8a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 424252, guid: 4246925f0393c430189bb4ceba36dc8a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1126,5 +1388,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4260342094908782849, guid: 4246925f0393c430189bb4ceba36dc8a,
+        type: 3}
+      propertyPath: floor
+      value: 
+      objectReference: {fileID: 1067395773}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4246925f0393c430189bb4ceba36dc8a, type: 3}

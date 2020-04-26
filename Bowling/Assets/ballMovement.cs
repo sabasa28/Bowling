@@ -14,13 +14,18 @@ public class ballMovement : MonoBehaviour
     float minZ = -6;
     float maxZ = 10;
     float maxForce = 15000.0f;
-    // Start is called before the first frame update
+    Vector3 origPos;
+    Quaternion origRot;
+    public bool reset = false;
+    int ballNum = 1;
+
     void Start()
     {
+        origPos = transform.position;
+        origRot = transform.rotation;
         rb = GetComponent<Rigidbody>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (Input.GetKey(KeyCode.RightArrow) && transform.position.z > minZ && ableToMove)
@@ -35,12 +40,32 @@ public class ballMovement : MonoBehaviour
         if (Input.GetKey(KeyCode.Space) && force<maxForce)
         {
             force+=add*Time.deltaTime;
+            if (force > maxForce) force = maxForce;
         }
         if (Input.GetKeyUp(KeyCode.Space) &&shot==false)
         {
             rb.AddForce(dir);
             shot = true;
             ableToMove = false;
+        }
+        if (transform.position.y < -1)
+            reset= true;
+    }
+
+    public void resetValues()
+    {
+        rb.constraints = RigidbodyConstraints.FreezeAll;
+        rb.constraints = RigidbodyConstraints.None;
+        transform.rotation = origRot; 
+        transform.position = origPos;
+        rb.velocity = Vector3.zero;
+        reset = false;
+        force = 0.0f;
+        if (ballNum < 3)
+        {
+            ballNum++;
+            shot = false;
+            ableToMove = true;
         }
     }
 }
