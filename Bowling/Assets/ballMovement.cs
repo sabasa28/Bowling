@@ -8,7 +8,7 @@ public class ballMovement : MonoBehaviour
     public float movement = 20.0f;
     bool ableToMove = true;
     Vector3 dir;
-    float add = 3000.0f;
+    float add = 5000.0f;
     Rigidbody rb;
     bool shot=false;
     float minZ = -6;
@@ -17,7 +17,8 @@ public class ballMovement : MonoBehaviour
     Vector3 origPos;
     Quaternion origRot;
     public bool reset = false;
-    int ballNum = 1;
+    public int ballNum = 1;
+    float timer = 0.0f;
 
     void Start()
     {
@@ -37,7 +38,7 @@ public class ballMovement : MonoBehaviour
             transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z + movement * Time.deltaTime);
         }
         dir = transform.forward * force;
-        if (Input.GetKey(KeyCode.Space) && force<maxForce)
+        if (Input.GetKey(KeyCode.Space) && force<maxForce && shot==false)
         {
             force+=add*Time.deltaTime;
             if (force > maxForce) force = maxForce;
@@ -48,8 +49,8 @@ public class ballMovement : MonoBehaviour
             shot = true;
             ableToMove = false;
         }
-        if (transform.position.y < -1)
-            reset= true;
+        if (shot == true) timer += Time.deltaTime;
+        if (ballNum <=3 && (transform.position.y < -5 || timer > 15.0f)) reset= true;
     }
 
     public void resetValues()
@@ -60,10 +61,11 @@ public class ballMovement : MonoBehaviour
         transform.position = origPos;
         rb.velocity = Vector3.zero;
         reset = false;
+        timer = 0.0f;
+        ballNum++;
         force = 0.0f;
-        if (ballNum < 3)
+        if (ballNum <= 3)
         {
-            ballNum++;
             shot = false;
             ableToMove = true;
         }
