@@ -12,17 +12,15 @@ public class PineManager : MonoBehaviour
         childTrans = transform.GetChild(0);
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (Vector3.Angle(childTrans.up,floor.transform.forward) < 45 || Vector3.Angle(childTrans.up, floor.transform.forward) > 135
             || Vector3.Angle(childTrans.up, floor.transform.right) < 45 || Vector3.Angle(childTrans.up, floor.transform.right) > 135
-            || transform.position.y < -5)
+            || childTrans.position.y < -5)
         {
             standing = false;
         }
         if (standing == false) StartCoroutine(DestroyPine());
-        Debug.Log(standing);
     }
 
     IEnumerator DestroyPine()
